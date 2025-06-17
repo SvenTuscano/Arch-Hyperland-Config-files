@@ -1,0 +1,7 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    background-color: rgba(0, 0, 0, 0.0); /* Semi-transparent black */
+    color: white; /* Text color */
+	font-family: Advaita Mono;
+	font-size : 300px;
+}

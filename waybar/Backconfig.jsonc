@@ -1,0 +1,22 @@
+// -*- mode: jsonc -*-
+
+{
+
+	"layer": "bottom", // Waybar at top layer
+	"exclusive": false,
+	"position": "left", // Waybar position (top|bottom|left|right)
+	"height": 700,// Waybar height (to be removed for auto height)
+	"width": 1080,
+	"modules-center": [
+
+        "clock"
+
+    ],
+
+//Modules configuration
+
+"clock":{
+	"format":"{:%H:%M}"
+}
+
+}

@@ -1,0 +1,100 @@
+* {
+
+    /* `otf-font-awesome` is required to be installed for icons */
+
+    font-family: Adwaita Mono;
+
+    font-size: 14px;
+
+    background-color: rgba(0, 0, 0, 0.0); /* Semi-transparent black */
+
+    color: white; /* Text color */
+
+                padding: 0px 0px 0px 0px;
+
+                margin: 2px 2px 2px 0px;
+
+        }
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+
+
+#waybar .modules-left{
+
+          background-color: rgba(0, 0, 0, 0.3);
+
+    padding: 0px;
+
+                border-radius: 10;
+
+    color: #ffffff;
+
+}
+
+#waybar .modules-center{
+
+          background-color: rgba(0, 0, 0, 0.3);
+
+    padding: 0px;
+
+                border-radius: 10;
+
+    color: #ffffff;
+
+}
+
+#waybar .modules-right{
+
+          background-color: rgba(0, 0, 0, 0.3);
+
+    padding: 0px;
+
+                border-radius: 10;
+
+    color: #ffffff;
+
+}
+
+#battery {
+
+    color: #ffffff;
+
+}
+
+
+#battery.charging, #battery.plugged {
+
+    color: #26A65B;
+
+        }
+
+
+@keyframes blink {
+
+    to {
+
+        background-color: #ffffff;
+
+        color: #000000;
+
+    }
+
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+
+#battery.critical:not(.charging) {
+
+    color: #f53c3c;
+
+    animation-name: blink;
+
+    animation-duration: 0.5s;
+
+    animation-timing-function: steps(12);
+
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate;
+
+        }
