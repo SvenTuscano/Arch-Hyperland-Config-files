@@ -1,2 +1,2 @@
 # Arch-Hyperland-Config-files
-config files
+Minimal Config files to get you started
